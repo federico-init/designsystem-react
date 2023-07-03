@@ -1,0 +1,25 @@
+@mixin size($height, $width) {
+  height: $height;
+  width: $width;
+}
+
+@mixin flexbox {
+  display: flex;
+}
+
+@mixin justify-align($justify, $align) {
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin flexDirection($flexDir) {
+  flex-direction: ($flexDir);
+}
+
+@mixin position($position) {
+  position: $position;
+}
+
+@mixin alignText($value) {
+  text-align: $value;
+}

@@ -1,0 +1,57 @@
+body {
+  @extend %css-reset;
+}
+
+.App {
+  @include flexbox;
+  @include justify-align(center, center);
+  @include flexDirection(column);
+  font-size: pixelToRem(24px);
+}
+
+.container1 {
+  // @extend %centerHorizontally;
+  // @extend %centerText;
+  @include size(600px, 1000px);
+  background: $backgroundColor1;
+
+  @include mobile {
+    background: $backgroundColor3;
+    font-size: pixelToRem(32px);
+    @include alignText(left);
+  }
+
+  @include tablet {
+    background: blueviolet;
+  }
+}
+
+.container2 {
+  @include size(400px, 800px);
+  background: $backgroundColor2;
+
+  @include mobile {
+    background: $backgroundColor1;
+    font-size: pixelToRem(38px);
+    @include alignText(left);
+  }
+
+  @include tablet {
+    background: blueviolet;
+  }
+}
+
+.container3 {
+  @include size(200px, 600px);
+  background: $backgroundColor3;
+
+  @include mobile {
+    background: $backgroundColor2;
+    font-size: pixelToRem(48px);
+    @include alignText(left);
+  }
+
+  @include tablet {
+    background: blueviolet;
+  }
+}
