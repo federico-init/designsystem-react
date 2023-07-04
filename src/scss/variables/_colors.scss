@@ -1,3 +1,24 @@
-$backgroundColor1: red;
-$backgroundColor2: yellow;
-$backgroundColor3: blue;
+// Core
+
+$primaryA: #000000;
+$primaryB: #ffffff;
+$accent: #266ef1;
+$negative: #de1135;
+$warning: #f6bc2f;
+$positive: #0e8345;
+
+// Background
+
+$backgroundPrimary: $primaryB;
+$backgroundSecondary: #f3f3f3;
+$backgroundTertiary: #e8e8e8;
+
+// Content
+
+$contentPrimary: $primaryA;
+$contentSecondary: #4b4b4b;
+$contentTertiary: #5e5e5e;
+
+// Border
+$borderOpaque: #e8e8e8;
+$borderSelected: $primaryA;

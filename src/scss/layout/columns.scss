@@ -1,0 +1,215 @@
+.col-1 {
+  width: column(1);
+  background-color: $positive;
+}
+
+.col-2 {
+  width: column(2);
+  background-color: $positive;
+}
+
+.col-3 {
+  width: column(3);
+  background-color: $positive;
+}
+
+.col-4 {
+  width: column(4);
+  background-color: $positive;
+}
+
+.col-5 {
+  width: column(5);
+  background-color: $positive;
+}
+
+.col-6 {
+  width: column(6);
+  background-color: $positive;
+}
+
+.col-7 {
+  width: column(7);
+  background-color: $positive;
+}
+
+.col-8 {
+  width: column(8);
+  background-color: $positive;
+}
+
+.col-9 {
+  width: column(9);
+  background-color: $positive;
+}
+
+.col-10 {
+  width: column(10);
+  background-color: $positive;
+}
+
+.col-11 {
+  width: column(11);
+  background-color: $positive;
+}
+
+.col-12 {
+  width: column(12);
+  background-color: $positive;
+}
+
+// column xs
+@include mobile {
+  .col-xs-1 {
+    width: column(1);
+    background-color: $accent;
+  }
+  .col-xs-2 {
+    width: column(2);
+    background-color: $accent;
+  }
+  .col-xs-3 {
+    width: column(3);
+    background-color: $accent;
+  }
+  .col-xs-4 {
+    width: column(4);
+    background-color: $accent;
+  }
+  .col-xs-5 {
+    width: column(5);
+    background-color: $accent;
+  }
+  .col-xs-6 {
+    width: column(6);
+    background-color: $accent;
+  }
+  .col-xs-7 {
+    width: column(7);
+    background-color: $accent;
+  }
+  .col-xs-8 {
+    width: column(8);
+    background-color: $accent;
+  }
+  .col-xs-9 {
+    width: column(9);
+    background-color: $accent;
+  }
+  .col-xs-10 {
+    width: column(10);
+    background-color: $accent;
+  }
+  .col-xs-11 {
+    width: column(11);
+    background-color: $accent;
+  }
+  .col-xs-12 {
+    width: column(12);
+    background-color: $accent;
+  }
+}
+
+// column sm
+@include tablet {
+  .col-sm-1 {
+    width: column(1);
+    background-color: $negative;
+  }
+  .col-sm-2 {
+    width: column(2);
+    background-color: $negative;
+  }
+  .col-sm-3 {
+    width: column(3);
+    background-color: $negative;
+  }
+  .col-sm-4 {
+    width: column(4);
+    background-color: $negative;
+  }
+  .col-sm-5 {
+    width: column(5);
+    background-color: $negative;
+  }
+  .col-sm-6 {
+    width: column(6);
+    background-color: $negative;
+  }
+  .col-sm-7 {
+    width: column(7);
+    background-color: $negative;
+  }
+  .col-sm-8 {
+    width: column(8);
+    background-color: $negative;
+  }
+  .col-sm-9 {
+    width: column(9);
+    background-color: $negative;
+  }
+  .col-sm-10 {
+    width: column(10);
+    background-color: $negative;
+  }
+  .col-sm-11 {
+    width: column(11);
+    background-color: $negative;
+  }
+  .col-sm-12 {
+    width: column(12);
+    background-color: $negative;
+  }
+}
+
+// column md
+@include laptop {
+  .col-md-1 {
+    width: column(1);
+    background-color: $warning;
+  }
+  .col-md-2 {
+    width: column(2);
+    background-color: $warning;
+  }
+  .col-md-3 {
+    width: column(3);
+    background-color: $warning;
+  }
+  .col-md-4 {
+    width: column(4);
+    background-color: $warning;
+  }
+  .col-md-5 {
+    width: column(5);
+    background-color: $warning;
+  }
+  .col-md-6 {
+    width: column(6);
+    background-color: $warning;
+  }
+  .col-md-7 {
+    width: column(7);
+    background-color: $warning;
+  }
+  .col-md-8 {
+    width: column(8);
+    background-color: $warning;
+  }
+  .col-md-9 {
+    width: column(9);
+    background-color: $warning;
+  }
+  .col-md-10 {
+    width: column(10);
+    background-color: $warning;
+  }
+  .col-md-11 {
+    width: column(11);
+    background-color: $warning;
+  }
+  .col-md-12 {
+    width: column(12);
+    background-color: $warning;
+  }
+}

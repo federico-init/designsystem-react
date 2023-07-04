@@ -6,3 +6,14 @@ $basesize: 16px;
 @function pixelToRem($pxVal) {
   @return math.div($pxVal, $basesize) * 1rem;
 }
+
+$columnCount: 12;
+@function column($col) {
+  @return math.div(100%, $columnCount) * $col;
+}
+
+// column gutter
+$gutter: 16px;
+.col-g-1 {
+  width: calc(column(1) - $gutter/2);
+}
