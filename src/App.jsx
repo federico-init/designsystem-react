@@ -2,10 +2,11 @@ import { useState } from "react";
 import "./App.css";
 import "./App.scss";
 
-import { InputText } from "./components/form";
+import { InputPassword, InputText } from "./components/form";
 
 function App() {
   const [inputText, setInputText] = useState("");
+  const [inputPassword, setInputPassword] = useState("");
 
   return (
     <>
@@ -18,7 +19,7 @@ function App() {
         state={"active"}
         handleChange={setInputText}
       />
-      {/* // input Text error */}
+      {/* input Text error */}
       <InputText
         id={"labelError"}
         name="label"
@@ -28,7 +29,7 @@ function App() {
         errorMessage={"Input error!"}
         handleChange={setInputText}
       />
-      {/* // input Text disabled */}
+      {/* input Text disabled */}
       <InputText
         id={"labelDisabled"}
         name="label"
@@ -36,6 +37,16 @@ function App() {
         label="Label"
         state={"disabled"}
         handleChange={setInputText}
+      />
+
+      {/* input Password */}
+      <InputPassword
+        id={"password"}
+        name="password"
+        placeholder="Placeholder"
+        label="Label"
+        handleChange={setInputPassword}
+        setInputPassword={setInputPassword}
       />
     </>
   );

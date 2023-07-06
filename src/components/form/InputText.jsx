@@ -11,7 +11,7 @@ const InputText = (props) => {
         <label
           htmlFor={id}
           className={`${styles.label} 
-          ${state == "disabled" ? styles.disabled : ""}`}
+          ${state === "disabled" ? styles.disabled : ""}`}
         >
           {label}
         </label>

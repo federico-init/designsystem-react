@@ -48,3 +48,30 @@
   font-size: $paragraphSm;
   font-weight: $hintFontWeight;
 }
+
+.inputWrapper {
+  @extend %input;
+}
+
+.inputPassword {
+  background: transparent;
+  outline: none;
+  appearance: none;
+  border: none;
+  font-family: $fontPrimary;
+  font-size: $paragraphSm;
+  font-style: normal;
+  font-weight: $inputContentWeight;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  flex: 1 0 0;
+}
+
+.icon {
+  display: flex;
+  @include size(16px, 16px);
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
