@@ -23,3 +23,35 @@
 @mixin alignText($value) {
   text-align: $value;
 }
+
+@mixin buttonFill($theme) {
+  @if ($theme == "light") {
+    background-color: $primaryB;
+    border-color: $primaryA;
+    color: $primaryA;
+  }
+  @if ($theme == "dark") {
+    background-color: $primaryA;
+    border-color: $primaryA;
+    color: $primaryB;
+  }
+}
+
+@mixin buttonSize($size) {
+  @if $size == "lg" {
+    padding: rem($padding-lg);
+    font-size: rem($buttonLg);
+  }
+  @if $size == "md" {
+    padding: rem($padding-md);
+    font-size: rem($buttonMd);
+  }
+  @if $size == "sm" {
+    padding: rem($padding-sm);
+    font-size: rem($buttonSm);
+  }
+  @if $size == "xs" {
+    padding: rem($padding-xs);
+    font-size: rem($buttonXs);
+  }
+}

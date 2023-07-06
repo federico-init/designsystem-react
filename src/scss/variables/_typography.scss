@@ -4,10 +4,10 @@ $fontPrimary: "Montserrat", sans-serif;
 
 // Font size
 
-$paragraphLarge: 18px;
-$paragrapghMedium: 16px;
-$paragraphSmall: 14px;
-$paragraphXSmall: 12px;
+$paragraphXs: 12px;
+$paragraphSm: 14px;
+$paragrapghMd: 16px;
+$paragraphLg: 18px;
 
 $heading1: 40px;
 $heading2: 36px;
@@ -15,3 +15,15 @@ $heading3: 32px;
 $heading4: 28px;
 $heading5: 24px;
 $heading6: 20px;
+
+$buttonXs: 12px;
+$buttonSm: 14px;
+$buttonMd: 16px;
+$buttonLg: 18px;
+
+// Input
+
+$labelFontWeight: 500;
+$hintFontWeight: 500;
+$inputContentWeight: 500;
+$contentDisabledFontWeight: 400;

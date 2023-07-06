@@ -4,3 +4,21 @@
   top: 50%;
   transform: translate(-50%, -50%);
 }
+
+%input {
+  display: flex;
+  height: 36px;
+  padding: 8px 16px;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+  background: $backgroundTertiary;
+  border-radius: 8px;
+  border: none;
+  // font
+  font-family: $fontPrimary;
+  font-size: $paragraphSm;
+  font-style: normal;
+  font-weight: $inputContentWeight;
+  line-height: 20px;
+}

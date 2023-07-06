@@ -1,0 +1,50 @@
+.inputForm {
+  display: flex;
+  width: 375px;
+  padding: 0px 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  margin: $inputMargin;
+}
+
+// i valori di default di input corrispondono allo state 'enabled'
+.input {
+  @extend %input;
+  outline: none;
+  appearance: none;
+
+  &:focus {
+    background: $primaryB;
+    color: $contentPrimary;
+    border: 3px solid $borderSelected;
+  }
+
+  &.error {
+    background: $primaryB;
+    color: $contentPrimary;
+    border: 3px solid $borderError;
+  }
+
+  &.disabled {
+    background: $backgroundSecondary;
+    color: $contentDisabled;
+    font-weight: $contentDisabledFontWeight;
+  }
+}
+
+.label {
+  color: $contentPrimary;
+  font-size: $paragraphSm;
+  font-weight: $labelFontWeight;
+
+  &.disabled {
+    color: $contentDisabled;
+  }
+}
+
+.hint {
+  color: $negative;
+  font-size: $paragraphSm;
+  font-weight: $hintFontWeight;
+}
