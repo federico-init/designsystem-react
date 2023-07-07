@@ -24,7 +24,7 @@ function App() {
   return (
     <>
       <Header />
-      {/* <Hero /> */}
+      <Hero />
 
       <br />
       <br />
