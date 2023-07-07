@@ -1,0 +1,54 @@
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: $primaryA;
+  color: $primaryB;
+}
+
+.container {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  padding: $padding-md;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.menuItem {
+  position: relative;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  &__label {
+    cursor: pointer;
+  }
+
+  &__dropdown {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    &.open {
+      list-style-type: none;
+      background-color: $primaryA;
+      visibility: visible;
+      opacity: 1;
+    }
+    ul {
+      list-style-type: none;
+      li {
+        padding: $padding-md;
+        cursor: pointer;
+      }
+    }
+  }
+}
