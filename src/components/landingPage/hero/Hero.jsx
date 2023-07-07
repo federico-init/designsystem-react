@@ -39,17 +39,17 @@ const Hero = () => {
         //     swiper.params.navigation.nextEl = nextRef.current;
         //   }} */}
           <SwiperSlide>
-            <div>
+            <div className={styles.imgContainer}>
               <img src="https://picsum.photos/200/300" alt="" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div>
+            <div className={styles.imgContainer}>
               <img src="https://picsum.photos/200/300" alt="" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div>
+            <div className={styles.imgContainer}>
               <img src="https://picsum.photos/200/300" alt="" />
             </div>
           </SwiperSlide>

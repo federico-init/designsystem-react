@@ -9,15 +9,24 @@
 
 .navigation {
   position: absolute;
-  width: 100px;
-  height: 100px;
+  width: 20px;
+  height: 20px;
   top: 50%;
   transform: translateY(-50%);
+  cursor: pointer;
 
   &.prevButton {
     left: 0;
+    cursor: pointer;
   }
   &.nextButton {
     right: 0;
+    cursor: pointer;
+  }
+}
+
+.imgContainer {
+  width: 100%;
+  img {
   }
 }
