@@ -19,6 +19,9 @@ export default defineConfig({
           @import "./src/scss/typography/font.scss";
           @import "./src/scss/layout/devices.scss";
           @import "./src/scss/layout/columns.scss";
+          @import "./src/scss/utils/flex.scss";
+          @import "./src/scss/utils/layout.scss";
+          @import "./src/scss/libraries/swiper.scss";
         `,
       },
     },

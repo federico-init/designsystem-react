@@ -24,6 +24,19 @@
   text-align: $value;
 }
 
+@mixin flexCenter() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin centerPosition() {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 @mixin buttonFill($theme) {
   @if ($theme == "light") {
     background-color: $primaryB;

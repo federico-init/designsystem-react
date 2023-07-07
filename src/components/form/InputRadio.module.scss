@@ -1,0 +1,41 @@
+.inputForm {
+  position: relative;
+  display: flex;
+  width: 375px;
+  padding: 0px 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  margin: $inputMargin;
+}
+
+.label {
+  color: $contentPrimary;
+  font-size: $paragraphSm;
+  font-weight: $labelFontWeight;
+}
+
+.input {
+  position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  width: rem(30px);
+  height: rem(30px);
+  background-color: $primaryB;
+  border: 2px solid $borderSelected;
+  border-radius: 50%;
+
+  &.activeInput {
+    &::after {
+      @include centerPosition();
+      content: "";
+      background-color: $positive;
+      border-radius: 50%;
+      height: 16px;
+      width: 16px;
+    }
+  }
+}

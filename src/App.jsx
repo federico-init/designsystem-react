@@ -2,7 +2,13 @@ import { useState } from "react";
 import "./App.css";
 import "./App.scss";
 
-import { InputPassword, InputText } from "./components/form";
+import {
+  InputPassword,
+  InputText,
+  InputSelect,
+  InputCheckbox,
+  InputRadio,
+} from "./components/form";
 
 function App() {
   const [inputText, setInputText] = useState("");
@@ -48,6 +54,13 @@ function App() {
         handleChange={setInputPassword}
         setInputPassword={setInputPassword}
       />
+
+      {/* <InputSelect /> */}
+
+      {/* input checkbox */}
+      <InputCheckbox name="checkbox" label="Checkbox" />
+      {/* input radio */}
+      <InputRadio name="radio" label="Radio" />
     </>
   );
 }
